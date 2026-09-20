@@ -107,6 +107,24 @@ Python and Matplotlib are used to visualize:
 
 The dashboard reads ride data from the SQLite database and provides a simple visual overview of ride activity and revenue.
 
+### Dashboard Visualizations
+
+#### Ride Status Distribution
+
+![Ride Status Distribution](ride_status.png)
+
+#### Revenue by Payment Method
+
+![Revenue by Payment Method](revenue_payment.png)
+
+#### Rides by Pickup Location
+
+![Rides by Pickup Location](pickup_location.png)
+
+#### Rides by Hour
+
+![Rides by Hour](rides_by_hour.png)
+
 ## Project Structure
 
 ```text
@@ -129,6 +147,10 @@ ride-sharing-data-pipeline/
 │   └── dashboard.py
 │
 ├── ride_sharing.db
+├── ride_status.png
+├── revenue_payment.png
+├── pickup_location.png
+├── rides_by_hour.png
 ├── requirements.txt
 └── README.md
 ```
