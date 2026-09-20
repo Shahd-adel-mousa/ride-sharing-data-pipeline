@@ -118,14 +118,16 @@ ride-sharing-data-pipeline/
 
 ## Key Results
 
-Using the sample dataset, the pipeline produced:
+The pipeline was tested on a synthetic dataset of 500 ride records.
 
-- 5 total rides
-- 4 completed rides
-- 1 cancelled ride
-- 330 total completed revenue
-- 82.50 average completed fare
-- 20% cancellation rate
+- Total rides: 500
+- Completed rides: 452
+- Cancelled rides: 48
+- Cancellation rate: 9.6%
+- Average completed fare: 108.19
+- Total revenue: 48,900.17
+
+These results were generated after applying data quality checks, transformations, loading the processed data into SQLite, and running SQL analytics.
 
 ## What This Project Demonstrates
 
