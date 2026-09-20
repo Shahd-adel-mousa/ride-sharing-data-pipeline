@@ -1,0 +1,6 @@
+ride_id,driver_id,pickup_location,dropoff_location,ride_date,distance_km,duration_min,fare,payment_method,ride_status,rating
+1001,501,Downtown,Airport,2026-09-01 08:30:00,12.5,25,85,Cash,Completed,5.0
+1002,502,Airport,Downtown,2026-09-01 09:15:00,15.2,30,110,Card,Completed,4.0
+1003,503,Mall,University,2026-09-01 10:00:00,8.7,18,60,Wallet,Completed,5.0
+1004,501,Downtown,Mall,2026-09-01 11:20:00,6.3,15,50,Card,Cancelled,
+1005,504,University,Downtown,2026-09-01 12:05:00,10.1,22,75,Cash,Completed,4.0

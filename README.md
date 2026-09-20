@@ -1,0 +1,153 @@
+# Ride-Sharing Data Engineering Pipeline
+
+## Project Overview
+
+A beginner-friendly data engineering project that builds an end-to-end pipeline for ride-sharing data.
+
+The project demonstrates how raw ride data can be extracted, cleaned, transformed, loaded into a database, and analyzed using SQL and Python.
+
+## Data Pipeline
+
+Raw CSV -> Extract -> Data Quality Checks -> Transform -> Processed CSV -> SQLite Database -> SQL Analytics -> Dashboard
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- SQLite
+- SQL
+- Matplotlib
+- Google Colab
+- GitHub
+
+## Dataset
+
+The dataset contains ride-level information including:
+
+- Ride ID
+- Driver ID
+- Pickup Location
+- Dropoff Location
+- Ride Date
+- Distance
+- Duration
+- Fare
+- Payment Method
+- Ride Status
+- Rating
+
+## ETL Process
+
+### Extract
+Raw ride data is loaded from a CSV file using Pandas.
+
+### Transform
+The pipeline performs:
+
+- Date conversion
+- Data quality validation
+- Ride month extraction
+- Ride day extraction
+- Ride hour extraction
+- Fare-per-kilometer calculation
+
+### Load
+The transformed dataset is:
+
+- Saved as a processed CSV file
+- Loaded into a SQLite database
+
+## Data Quality Checks
+
+The pipeline validates:
+
+- Positive ride distance
+- Positive ride duration
+- Non-negative fares
+- Duplicate records
+- Missing values
+
+Cancelled rides may have missing ratings because no customer rating is expected for a cancelled ride.
+
+## Database Model
+
+The project contains three main tables:
+
+- rides: ride-level transactional data
+- drivers: unique driver IDs
+- locations: unique pickup and dropoff locations
+
+## SQL Analytics
+
+The project includes SQL queries for:
+
+- Total completed revenue
+- Average completed ride fare
+- Ride status distribution
+- Cancellation rate
+- Revenue by payment method
+- Rides by pickup location
+- Rides by hour
+
+## Dashboard
+
+Python and Matplotlib are used to visualize:
+
+- Ride status distribution
+- Revenue by payment method
+- Rides by pickup location
+- Rides by hour
+
+## Project Structure
+
+ride-sharing-data-pipeline/
+    data/
+        raw/
+            raw_rides.csv
+        processed/
+            processed_rides.csv
+    src/
+        etl_pipeline.py
+    sql/
+        sql_queries.sql
+    dashboard/
+    ride_sharing.db
+    requirements.txt
+    README.md
+
+## Key Results
+
+Using the sample dataset, the pipeline produced:
+
+- 5 total rides
+- 4 completed rides
+- 1 cancelled ride
+- 330 total completed revenue
+- 82.50 average completed fare
+- 20% cancellation rate
+
+## What This Project Demonstrates
+
+This project demonstrates practical understanding of:
+
+- ETL pipeline development
+- Data cleaning and validation
+- Data transformation
+- SQL analytics
+- Database loading
+- Basic data modeling
+- Data visualization
+- Python data engineering workflows
+
+## Future Improvements
+
+Possible future improvements include:
+
+- PostgreSQL integration
+- Apache Airflow orchestration
+- Larger datasets
+- Automated data ingestion from APIs
+- Docker containerization
+- Power BI or Streamlit dashboard
+- Automated data quality monitoring
